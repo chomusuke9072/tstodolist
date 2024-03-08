@@ -1,6 +1,10 @@
 import { Todo } from "../../types/todo-type";
 
-const TodoForm = () => {
+interface TodoFormProps {
+  addTodo: (todo: Todo) => void;
+}
+
+const TodoForm = ({ addTodo }: TodoFormProps) => {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -15,6 +19,8 @@ const TodoForm = () => {
       isDone: false,
       deadline: new Date().toISOString(),
     };
+
+    addTodo(nextTodo);
   };
 
   return (
