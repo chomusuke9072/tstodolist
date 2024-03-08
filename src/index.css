@@ -3,3 +3,8 @@ body {
   display: flex;
   place-items: center;
 }
+
+ul,
+li {
+  list-style: none;
+}
