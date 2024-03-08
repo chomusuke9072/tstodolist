@@ -1,11 +1,11 @@
-import TodoForm from "./components/todo/TodoForm"
+import TodoForm from "./components/todo/TodoForm";
 
 const App = () => {
   return (
     <main>
       <TodoForm />
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;
