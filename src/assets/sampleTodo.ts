@@ -5,5 +5,5 @@ export const sampleTodo: Todo = {
   title: "Sample Todo",
   content: "This is a sample todo.",
   isDone: false,
-  deadline: new Date().toDateString(),
+  deadline: new Date().toLocaleString(),
 };

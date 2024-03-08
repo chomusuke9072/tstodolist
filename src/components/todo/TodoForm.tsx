@@ -17,7 +17,7 @@ const TodoForm = ({ addTodo }: TodoFormProps) => {
       title,
       content,
       isDone: false,
-      deadline: new Date().toISOString(),
+      deadline: new Date().toLocaleDateString(),
     };
 
     addTodo(nextTodo);
