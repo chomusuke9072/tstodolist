@@ -1,6 +1,10 @@
+import TodoForm from "./components/todo/TodoForm"
+
 const App = () => {
   return (
-    <div>App</div>
+    <main>
+      <TodoForm />
+    </main>
   )
 }
 
